@@ -1,13 +1,33 @@
 public class Hund {
-    public String rasse;
-    public double alter;
-    public String farbe;
+    private String rasse;
+    private double alter;
+    private String farbe;
+    private String trick;
 
     public Hund(String rasse, double alter, String farbe) {
         // Neues Schlüsselwort: Zugriff auf das eigenen Objekt: this (self, me)
         this.rasse = rasse;
         this.alter = alter;
         this.farbe = farbe;
+    }
+
+    public String getRasse() {
+        return rasse;
+    }
+
+    public double getAlter() {
+        return alter;
+    }
+
+    public String getFarbe() {
+        return farbe;
+    }
+    public String getTrick() {
+        return trick;
+    }
+
+    public void setTrick(String trick) {
+        this.trick = trick;
     }
 
     public void adoptieren() {

@@ -45,5 +45,10 @@ public class Main {
         Hund hund2 = new Hund("Australian Shepard", 0.5, "braun-weiß");
         hund1.adoptieren();
         hund2.trickBeibringen("Tot stellen");
+
+        hund1.setTrick("Rolle machen");
+        hund1.trickBeibringen(hund1.getTrick());
+
+
     }
 }
